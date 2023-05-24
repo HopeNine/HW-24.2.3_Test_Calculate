@@ -1,12 +1,3 @@
-# def test_sum():
-#     assert 2 + 2 == 4
-#
-# def sum(x, y):
-#     return x + y
-#
-# def test_sum():
-#     assert sum(1, 2) == 3
-
 import pytest
 from app.calculator import Calculator
 
@@ -42,7 +33,6 @@ class TestCalc:
 
     def test_multiply_unsuccess(self):
         assert self.calc.multiply(self, 100, 10) == 1
-
 
     def teardown(self):
         print("Выполнение метода Teardown")
